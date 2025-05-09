@@ -1,0 +1,76 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: linear-gradient(135deg, #2d3439, #00c46a);
+  color: white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 60rem;
+}
+
+.animated-title {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  animation: fadeInSlide 2s ease forwards;
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  animation: fadeIn 2s ease 1s forwards;
+  opacity: 0;
+}
+
+.btn-start {
+  font-size: 1.6rem;
+  background-color: #ffb545;
+  padding: 1rem 2.5rem;
+  border-radius: 5rem;
+  color: #2d3439;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  animation: fadeIn 2s ease 2s forwards;
+  opacity: 0;
+}
+
+.btn-start:hover {
+  background-color: #ffc262;
+}
+
+/* Animations */
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
